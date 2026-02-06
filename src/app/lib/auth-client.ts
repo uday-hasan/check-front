@@ -19,7 +19,7 @@ import { createAuthClient } from "better-auth/react";
 // });
 
 export const authClient = createAuthClient({
-  baseURL: "https://medi-store-server-tau.vercel.app",
+  baseURL: "https://check-mocha-three.vercel.app",
   plugins: [
     inferAdditionalFields({
       user: { role: { type: "string" } },
