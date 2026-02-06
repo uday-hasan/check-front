@@ -3,10 +3,10 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'randomuser.me',
-        port: '',
-        pathname: '/api/portraits/**',
+        protocol: "https",
+        hostname: "randomuser.me",
+        port: "",
+        pathname: "/api/portraits/**",
       },
       {
         protocol: "https",
@@ -18,11 +18,11 @@ const nextConfig = {
   async rewrite() {
     return [
       {
-        source: '/api/:path*',
-        destination: `https://medi-store-server-tau.vercel.app/api/:path*`,
+        source: "/api/:path*",
+        destination: `https://check-mocha-three.vercel.app/api/:path*`,
       },
-    ]
-  }
-}
+    ];
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
